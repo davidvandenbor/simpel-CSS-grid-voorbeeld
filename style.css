@@ -1,41 +1,31 @@
-
 body {
-  padding: 2em;
-  font-family: sans-serif
+	display: grid;
+	justify-content: center;
 }
 
-hr {
-  margin: 80px;
+main {
+	max-width: 800px;
+	margin: 30px;
 }
 
+/* Als je "display:grid" opgeeft 
+veranderen alle directe items in 
+die container automatisch in kolommen!! */
 
-/* Examples of columns that scale automatically with CSS grid, no media queries needed! */
-
-.grid-container-cssgrid {
-  display:grid
+section {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 50px;
+	margin-top: 50px;
 }
 
-.grid-container--fill {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-}
+/* Je kan ook beinvloeden 
+wat de verhoudingen of groottes 
+van de kolommen onderling zijn:  */
 
-.grid-container--fit {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-
-/* Same as above but with CSS columns instead of CSS grid! */
-
-.csscolumns {
-  columns:200px;
-}
-
-/* the blue columns themselves */
-.grid-element {
-  background-color: rgb(82, 160, 212);
-  padding: 30px;
-  gap:2px;
-  color: #fff;
-  border: 2px solid #fff;
-  break-inside: avoid;
+#biografie {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	/* of in percentages:
+grid-template-columns: 25% 75%; */
 }

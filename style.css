@@ -3,6 +3,23 @@ body {
 	justify-content: center;
 }
 
+nav {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: flex-end;
+}
+
+h2 {
+	font-size: 40px;
+	color: blue;
+	margin: 0;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 10px;
+}
+
 main {
 	max-width: 800px;
 	margin: 30px;
@@ -28,4 +45,10 @@ van de kolommen onderling zijn:  */
 	grid-template-columns: 1fr 3fr;
 	/* of in percentages:
 grid-template-columns: 25% 75%; */
+}
+
+/* Dit is om een scroll animatie te maken voor als je naar de link in de pagina toegaat, zoals bij "Biografie"  */
+
+html {
+	scroll-behavior: smooth;
 }

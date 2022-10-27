@@ -53,6 +53,7 @@ nav a {
 	text-decoration: none;
 	color: red;
 	font-family: "Lobster";
+	font-size:20px;
 	padding: 10px;
 }
 nav a:hover {

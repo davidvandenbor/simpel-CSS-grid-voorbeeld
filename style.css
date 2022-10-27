@@ -52,7 +52,7 @@ nav {
 nav a {
 	text-decoration: none;
 	color: red;
-	font-weight: bold;
+	font-family: "Lobster";
 	padding: 10px;
 }
 nav a:hover {
